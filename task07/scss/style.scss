@@ -1,0 +1,69 @@
+@import 'reset';
+// 清除浮动
+// @mixin clearfix() {
+//   &:before,
+//   &:after {
+//     content: ' ';
+//     display: table;
+//   }
+//   &:after {
+//     clear: both;
+//   }
+// }
+div {
+  transition: all .5s;
+}
+
+.parent {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  margin: 30px auto;
+  width: 1000px;
+  height: 600px;
+  background-color: #fff;
+}
+
+.child01,
+.child02,
+.child03,
+.child04 {
+  display: flex;
+  width: 50%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  margin: 20px 10%;
+  background-color: #fff;
+}
+
+.child02 {
+  margin: 20px;
+}
+
+.child01 {
+  margin: 20px auto;
+  width: 90%;
+  height: 50%;
+}
+
+.btns {
+  width: 500px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  button {
+    flex: 1;
+    width: 80px;
+    height: 30px;
+    margin: 20px;
+    background-color: #398dee;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    &:active {
+      background-color: darken(#398dee, 10%);
+      transform: scale(.95);
+    }
+  }
+}
